@@ -4,7 +4,7 @@ The specification of LongDelay protocol
 Steps to make a LongDelay transaction.
 
 ## 1. 
- Construct the transction you want to send in future -- `TX1`. It can be any bitcoin transction, include twetch post, or payment.
+ Construct the transction you want to send in future -- `TX1`. It can be any bitcoin transction, including twetch post, or payment.
 
 ## 2. 
   Set the `locktime` of `TX1`.
@@ -25,7 +25,7 @@ Steps to make a LongDelay transaction.
 
 ## 5. 
 
-  Embed the `TX1` in anoterh transaction -- `TX0`.
+  Embed the `TX1` in another transaction -- `TX0`.
 
   `TX0` has an data output:
 
@@ -41,13 +41,17 @@ Steps to make a LongDelay transaction.
 # FAQ
 
 - What the use case?
+
 It provides a method to set very long delay tasks. Anyone can set a 1 year or 10 years task with low cost, and without worry about the message will be dropped or edited.
 
 - Who will publish the `TX1`?
+
 Someone who wants earn money from this. If the `TX1` have been pushed to miners before the `locktime`, miners may keep it in mempool, the tx will be mined after `locktime`, and others have no chance to update the outputs, because it violates the rule of sequence update. But if the `locktime` is very far away, the tx may be dropped out from mempool, so someone can save it, update it and publish it.
 
 - Could the `TX1` be canceled?
+
 Yes, just sign another tx with a larger sequence number to update it.
 
 - Will the `TX1` missing?
+
 If you paid too low.
