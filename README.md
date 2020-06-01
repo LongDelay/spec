@@ -1,3 +1,5 @@
+Reliable Long Delay Message Delivery.
+
 # spec
 The specification of LongDelay protocol
 
@@ -37,6 +39,10 @@ Steps to make a LongDelay transaction.
   Publish `TX0`.
 
   example: https://whatsonchain.com/tx/113f11e9c50bc8e8fc89837702d790db6e9cd3dce7f45f88ef2a60ce1840d4a7
+  
+# Explorer
+
+[find all LongDelay transactions with bitDB](https://genesis.bitdb.network/query/1FnauZ9aUH2Bex6JzdcV4eNX7oLSSEbxtN/ewogICJ2IjogMywKICAicSI6IHsKICAgICJmaW5kIjogewogICAgICAib3V0LnMyIjogIkxPTkdERUxBWSIKICAgIH0sCiAgICAicHJvamVjdCI6IHsKICAgICAgInR4LmgiOiAxLAogICAgICAib3V0LnMyIjogMSwKICAgICAgIm91dC5iMyI6IDEsCiAgICAgICJvdXQuczMiOiAxLAogICAgICAiYmxrIjogMQogICAgfSwKICAgICJsaW1pdCI6IDEwCiAgfQp9)
 
 # FAQ
 
